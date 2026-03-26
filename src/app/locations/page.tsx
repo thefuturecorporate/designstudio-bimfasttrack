@@ -47,15 +47,14 @@ export default function LocationsPage() {
   return (
     <div ref={ref}>
       {/* Hero */}
-      <section className="relative bg-black-deep bg-blueprint pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-white/5 rounded-full blur-3xl" />
+      <section className="relative bg-gray-light pt-32 pb-20 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
-            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">Find Us Near You</span>
-            <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
+            <span className="text-gray-500 text-sm font-bold tracking-widest uppercase">Find Us Near You</span>
+            <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-black-deep mt-3">
               <span className="text-primary">6</span> Centers Across Pune
             </h1>
-            <p className="text-gray-400 text-lg mt-4 max-w-3xl">
+            <p className="text-gray-500 text-lg mt-4 max-w-3xl">
               Choose a location convenient for you. All centers offer the same premium BIM training experience with state-of-the-art infrastructure.
             </p>
           </div>
@@ -119,17 +118,17 @@ export default function LocationsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-black-deep">
+      <section className="py-16 bg-gray-light">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="font-[var(--font-outfit)] text-3xl font-extrabold text-white mb-4">
+          <h2 className="font-[var(--font-outfit)] text-3xl font-extrabold text-black-deep mb-4">
             Visit Your Nearest <span className="text-primary">Center</span>
           </h2>
-          <p className="text-gray-400 mb-8">Walk in for a free counseling session at any of our 6 locations.</p>
+          <p className="text-gray-600 mb-8">Walk in for a free counseling session at any of our 6 locations.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition-all">
               Book a Visit
             </Link>
-            <a href="tel:+918237100666" className="border-2 border-white/20 text-white hover:bg-white/5 font-semibold px-8 py-4 rounded-xl transition-all">
+            <a href="tel:+918237100666" className="border-2 border-gray-300 text-black-deep hover:bg-gray-50 font-semibold px-8 py-4 rounded-xl transition-all">
               Call: 8237 100 666
             </a>
           </div>

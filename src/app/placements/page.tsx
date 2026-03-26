@@ -7,10 +7,10 @@ function PlacementStat({ value, suffix, label }: { value: number; suffix: string
   const { count, ref } = useCounter(value);
   return (
     <div ref={ref} className="text-center">
-      <div className="font-[var(--font-outfit)] text-4xl md:text-5xl font-extrabold text-white">
+      <div className="font-[var(--font-outfit)] text-4xl md:text-5xl font-extrabold text-black-deep">
         {count}{suffix}
       </div>
-      <div className="text-sm text-gray-400 mt-2">{label}</div>
+      <div className="text-sm text-gray-500 mt-2">{label}</div>
     </div>
   );
 }
@@ -35,15 +35,14 @@ export default function PlacementsPage() {
   return (
     <div ref={ref}>
       {/* Hero */}
-      <section className="relative bg-black-deep bg-blueprint pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-1/2 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl -translate-y-1/2" />
+      <section className="relative bg-gray-light pt-32 pb-20 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
-            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">Proven Track Record</span>
-            <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
+            <span className="text-gray-500 text-sm font-bold tracking-widest uppercase">Proven Track Record</span>
+            <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-black-deep mt-3">
               <span className="text-primary">100%</span> Placement Record
             </h1>
-            <p className="text-gray-400 text-lg mt-4 max-w-3xl">
+            <p className="text-gray-500 text-lg mt-4 max-w-3xl">
               Our graduates work at leading construction firms, multinational consultancies, and BIM-focused organizations in India and the Gulf.
             </p>
           </div>
@@ -109,17 +108,17 @@ export default function PlacementsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-black-deep">
+      <section className="py-16 bg-gray-light">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="font-[var(--font-outfit)] text-3xl font-extrabold text-white mb-4">
+          <h2 className="font-[var(--font-outfit)] text-3xl font-extrabold text-black-deep mb-4">
             Be Our Next <span className="text-primary">Success Story</span>
           </h2>
-          <p className="text-gray-400 mb-8">Join hundreds of BIM professionals who launched their careers with us.</p>
+          <p className="text-gray-600 mb-8">Join hundreds of BIM professionals who launched their careers with us.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition-all">
               Start Your Journey
             </Link>
-            <a href="https://wa.me/918237100666" target="_blank" rel="noopener noreferrer" className="border-2 border-white/20 text-white hover:bg-white/5 font-semibold px-8 py-4 rounded-xl transition-all">
+            <a href="https://wa.me/918237100666" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-300 text-black-deep hover:bg-gray-50 font-semibold px-8 py-4 rounded-xl transition-all">
               WhatsApp Enquiry
             </a>
           </div>

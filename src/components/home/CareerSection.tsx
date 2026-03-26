@@ -16,18 +16,17 @@ export default function CareerSection() {
   const ref = useScrollAnimation();
 
   return (
-    <section className="py-20 md:py-28 bg-black-deep bg-blueprint relative overflow-hidden" ref={ref}>
-      <div className="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
+    <section className="py-20 md:py-28 bg-gray-light relative overflow-hidden" ref={ref}>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 fade-in-up">
-          <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">
+          <span className="text-gray-500 text-sm font-bold tracking-widest uppercase">
             Career Outcomes
           </span>
-          <h2 className="font-[var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mt-3">
+          <h2 className="font-[var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-extrabold text-black-deep mt-3">
             Aim for <span className="text-primary">&#8377;4-20 LPA</span> and Beyond
           </h2>
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
             High-demand BIM roles across India and the Gulf — with salaries that grow with your expertise.
           </p>
         </div>
@@ -36,13 +35,13 @@ export default function CareerSection() {
           {roles.map((role, i) => (
             <div
               key={role.title}
-              className="fade-in-up card-hover bg-charcoal/50 border border-white/10 rounded-2xl p-6"
+              className="fade-in-up card-hover bg-white border border-gray-200 rounded-2xl p-6"
               style={{ transitionDelay: `${i * 80}ms` }}
             >
               <div className="text-xs text-gray-500 font-medium mb-3 uppercase tracking-wider">
                 {role.level}
               </div>
-              <h3 className="font-[var(--font-outfit)] text-white font-bold text-lg mb-3">
+              <h3 className="font-[var(--font-outfit)] text-black-deep font-bold text-lg mb-3">
                 {role.title}
               </h3>
               <div className="flex items-baseline gap-1">

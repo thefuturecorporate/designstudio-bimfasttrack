@@ -52,19 +52,17 @@ export default function WorkflowSection() {
   const ref = useScrollAnimation();
 
   return (
-    <section className="py-20 md:py-28 bg-black-deep bg-blueprint relative overflow-hidden" ref={ref}>
-      {/* Accent glow */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
+    <section className="py-20 md:py-28 bg-gray-light relative overflow-hidden" ref={ref}>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 fade-in-up">
-          <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">
+          <span className="text-gray-500 text-sm font-bold tracking-widest uppercase">
             The Complete Workflow
           </span>
-          <h2 className="font-[var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mt-3">
+          <h2 className="font-[var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-extrabold text-black-deep mt-3">
             7-Stage BIM <span className="text-primary">Workflow</span>
           </h2>
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
             Master the exact workflow used by global AEC firms — from concept to handover.
           </p>
         </div>
@@ -87,25 +85,25 @@ export default function WorkflowSection() {
                 >
                   <div className={`relative flex items-start gap-4 md:gap-6 p-5 md:p-6 rounded-xl transition-all ${
                     active === i
-                      ? "bg-charcoal/80 border border-primary/30"
-                      : "bg-charcoal/30 border border-white/5 hover:bg-charcoal/50"
+                      ? "bg-white border border-primary/30"
+                      : "bg-white border border-gray-200 hover:bg-gray-50"
                   }`}>
                     {/* Number Circle */}
                     <div className={`shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center font-[var(--font-outfit)] font-extrabold text-sm transition-all ${
                       active === i
                         ? "bg-primary text-white"
-                        : "bg-charcoal text-gray-400 border border-white/10"
+                        : "bg-gray-100 text-gray-500 border border-gray-200"
                     }`}>
                       {stage.number}
                     </div>
 
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between">
-                        <h3 className="font-[var(--font-outfit)] text-lg font-bold text-white">
+                        <h3 className="font-[var(--font-outfit)] text-lg font-bold text-black-deep">
                           {stage.title}
                         </h3>
                         <svg
-                          className={`w-5 h-5 text-gray-400 shrink-0 transition-transform ${
+                          className={`w-5 h-5 text-gray-500 shrink-0 transition-transform ${
                             active === i ? "rotate-180" : ""
                           }`}
                           fill="none"
@@ -118,7 +116,7 @@ export default function WorkflowSection() {
 
                       {active === i && (
                         <div className="mt-3 space-y-3 animate-[fadeIn_0.3s_ease-out]">
-                          <p className="text-sm text-gray-400 leading-relaxed">
+                          <p className="text-sm text-gray-500 leading-relaxed">
                             {stage.description}
                           </p>
                           <div className="flex flex-wrap gap-2">

@@ -57,15 +57,14 @@ export default function ContactPage() {
   return (
     <div ref={ref}>
       {/* Hero */}
-      <section className="relative bg-black-deep bg-blueprint pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <section className="relative bg-gray-light pt-32 pb-20 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
-            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">Get In Touch</span>
-            <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
+            <span className="text-gray-500 text-sm font-bold tracking-widest uppercase">Get In Touch</span>
+            <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-black-deep mt-3">
               Start Your <span className="text-primary">BIM Career</span> Today
             </h1>
-            <p className="text-gray-400 text-lg mt-4 max-w-3xl">
+            <p className="text-gray-500 text-lg mt-4 max-w-3xl">
               Fill the form below or reach us directly via WhatsApp or phone. Our team will guide you through the enrollment process.
             </p>
           </div>

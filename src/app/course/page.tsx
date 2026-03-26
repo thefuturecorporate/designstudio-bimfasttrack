@@ -171,17 +171,16 @@ export default function CoursePage() {
   return (
     <div ref={ref}>
       {/* Hero */}
-      <section className="relative bg-black-deep bg-blueprint pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <section className="relative bg-gray-light pt-32 pb-20 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
-            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">
+            <span className="text-gray-500 text-sm font-bold tracking-widest uppercase">
               Flagship Program
             </span>
-            <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
+            <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-black-deep mt-3">
               Executive Diploma in <span className="text-primary">BIM</span>
             </h1>
-            <p className="text-gray-400 text-lg mt-4 max-w-3xl">
+            <p className="text-gray-500 text-lg mt-4 max-w-3xl">
               A comprehensive 6-8 month program that trains you in the complete BIM workflow using industry-standard tools. From concept design to project handover.
             </p>
             <div className="flex flex-wrap gap-6 mt-8">
@@ -192,8 +191,8 @@ export default function CoursePage() {
                 { val: "7 Projects", label: "Hands-on" },
               ].map((s) => (
                 <div key={s.label} className="text-center">
-                  <div className="font-[var(--font-outfit)] text-2xl font-extrabold text-white">{s.val}</div>
-                  <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+                  <div className="font-[var(--font-outfit)] text-2xl font-extrabold text-black-deep">{s.val}</div>
+                  <div className="text-xs text-gray-400 mt-1">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -293,16 +292,16 @@ export default function CoursePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-black-deep">
+      <section className="py-16 bg-gray-light">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="font-[var(--font-outfit)] text-3xl font-extrabold text-white mb-4">
+          <h2 className="font-[var(--font-outfit)] text-3xl font-extrabold text-black-deep mb-4">
             Ready to Start Your <span className="text-primary">BIM Journey</span>?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Link href="/contact" className="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/30">
               Enquire Now
             </Link>
-            <a href="https://wa.me/918237100666" target="_blank" rel="noopener noreferrer" className="border-2 border-white/20 text-white hover:bg-white/5 font-semibold px-8 py-4 rounded-xl transition-all">
+            <a href="https://wa.me/918237100666" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-300 text-black-deep hover:bg-gray-50 font-semibold px-8 py-4 rounded-xl transition-all">
               WhatsApp Us
             </a>
           </div>
