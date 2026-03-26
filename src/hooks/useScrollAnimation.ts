@@ -19,8 +19,12 @@ export function useScrollAnimation() {
     const el = ref.current;
     if (el) {
       const children = el.querySelectorAll(".fade-in-up");
-      children.forEach((child) => observer.observe(child));
+      children.forEach((child) => {
+        child.setAttribute("data-animate", "true");
+        observer.observe(child);
+      });
       if (el.classList.contains("fade-in-up")) {
+        el.setAttribute("data-animate", "true");
         observer.observe(el);
       }
     }

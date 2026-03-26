@@ -48,13 +48,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Scroll-triggered fade-in animation */
+/* Scroll-triggered fade-in: starts visible, JS adds animation class */
 .fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Only apply animation when JS is loaded and observer is active */
+.fade-in-up[data-animate="true"] {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
-.fade-in-up.visible {
+.fade-in-up[data-animate="true"].visible {
   opacity: 1;
   transform: translateY(0);
 }
