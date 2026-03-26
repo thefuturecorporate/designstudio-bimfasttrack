@@ -24,10 +24,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black-deep ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${
         scrolled
-          ? "shadow-lg shadow-black/20"
-          : ""
+          ? "shadow-md"
+          : "border-b border-gray-100"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,7 +39,7 @@ export default function Navbar() {
               alt="BIM FastTrack — High-Salary Gateway"
               width={160}
               height={50}
-              className="h-12 md:h-14 w-auto invert brightness-200"
+              className="h-12 md:h-14 w-auto"
               priority
             />
           </Link>
@@ -50,7 +50,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-300 hover:text-white px-3 py-2 rounded-lg transition-colors hover:bg-white/5"
+                className="text-sm font-medium text-gray-700 hover:text-black-deep px-3 py-2 rounded-lg transition-colors hover:bg-gray-100"
               >
                 {link.label}
               </Link>
@@ -70,7 +70,7 @@ export default function Navbar() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-black-deep p-2"
             aria-label="Toggle menu"
           >
             <svg
@@ -105,13 +105,13 @@ export default function Navbar() {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-black-deep/98 backdrop-blur-lg border-t border-white/10 px-4 py-4 space-y-1">
+        <div className="bg-white border-t border-gray-100 px-4 py-4 space-y-1">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="block text-gray-300 hover:text-white hover:bg-white/5 px-4 py-3 rounded-lg font-medium transition-colors"
+              className="block text-gray-700 hover:text-black-deep hover:bg-gray-100 px-4 py-3 rounded-lg font-medium transition-colors"
             >
               {link.label}
             </Link>
