@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
         aria-label="Call us"
       >
         <svg
-          className="w-6 h-6 text-white group-hover:text-gold"
+          className="w-6 h-6 text-white group-hover:text-white"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

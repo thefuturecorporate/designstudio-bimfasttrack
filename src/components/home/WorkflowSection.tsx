@@ -58,7 +58,7 @@ export default function WorkflowSection() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 fade-in-up">
-          <span className="text-gold text-sm font-bold tracking-widest uppercase">
+          <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">
             The Complete Workflow
           </span>
           <h2 className="font-[var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mt-3">

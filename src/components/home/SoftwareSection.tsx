@@ -4,9 +4,6 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const suites = [
   {
     name: "Autodesk Product Suite",
-    color: "border-blue-500/30",
-    bgColor: "bg-blue-500/5",
-    iconColor: "text-blue-400",
     tools: [
       { name: "AutoCAD", desc: "2D Drafting & Technical Drawings" },
       { name: "Revit Architecture", desc: "Building Design & Documentation" },
@@ -17,9 +14,6 @@ const suites = [
   },
   {
     name: "CSI Software Suite",
-    color: "border-emerald-500/30",
-    bgColor: "bg-emerald-500/5",
-    iconColor: "text-emerald-400",
     tools: [
       { name: "ETABS", desc: "Structural Analysis & Design" },
       { name: "SAFE", desc: "Foundation Design & Analysis" },
@@ -28,9 +22,6 @@ const suites = [
   },
   {
     name: "Microsoft Product Suite",
-    color: "border-orange-500/30",
-    bgColor: "bg-orange-500/5",
-    iconColor: "text-orange-400",
     tools: [
       { name: "MS Project", desc: "Project Scheduling & Planning" },
       { name: "Excel", desc: "Quantity Estimation & BOQ" },
@@ -40,9 +31,6 @@ const suites = [
   },
   {
     name: "Visualization & Media",
-    color: "border-purple-500/30",
-    bgColor: "bg-purple-500/5",
-    iconColor: "text-purple-400",
     tools: [
       { name: "Lumion", desc: "3D Rendering & Walkthroughs" },
       { name: "Filmora", desc: "Video Editing & Presentations" },
@@ -73,11 +61,11 @@ export default function SoftwareSection() {
           {suites.map((suite, i) => (
             <div
               key={suite.name}
-              className={`fade-in-up card-hover ${suite.bgColor} border ${suite.color} rounded-2xl p-8`}
+              className="fade-in-up card-hover bg-white border border-gray-200 rounded-2xl p-8"
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               <div className="flex items-center gap-3 mb-6">
-                <svg className={`w-6 h-6 ${suite.iconColor}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <h3 className="font-[var(--font-outfit)] text-lg font-bold text-black-deep">
@@ -87,7 +75,7 @@ export default function SoftwareSection() {
               <div className="space-y-3">
                 {suite.tools.map((tool) => (
                   <div key={tool.name} className="flex items-start gap-3">
-                    <svg className={`w-4 h-4 ${suite.iconColor} shrink-0 mt-0.5`} fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-charcoal shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     <div>

@@ -10,11 +10,11 @@ export default function HeroSection() {
       {/* Geometric Accent Lines */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-primary/5 to-transparent rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-gold/5 to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-white/5 to-transparent rounded-full blur-3xl" />
         {/* Diagonal accent lines */}
         <svg className="absolute inset-0 w-full h-full opacity-[0.03]" xmlns="http://www.w3.org/2000/svg">
           <line x1="0" y1="100%" x2="100%" y2="0" stroke="#CC0000" strokeWidth="1" />
-          <line x1="20%" y1="100%" x2="100%" y2="20%" stroke="#D4A853" strokeWidth="0.5" />
+          <line x1="20%" y1="100%" x2="100%" y2="20%" stroke="#CC0000" strokeWidth="0.5" />
           <line x1="0" y1="80%" x2="80%" y2="0" stroke="#CC0000" strokeWidth="0.5" />
         </svg>
       </div>
@@ -26,7 +26,7 @@ export default function HeroSection() {
           <span className="font-[var(--font-outfit)] text-sm font-bold text-white">
             BIM <span className="text-primary">Fast</span>Track
           </span>
-          <span className="text-xs text-gold italic">High-Salary Gateway</span>
+          <span className="text-xs text-gray-400 italic">High-Salary Gateway</span>
         </div>
 
         {/* Main Headline */}
@@ -34,7 +34,7 @@ export default function HeroSection() {
           India&apos;s Leading{" "}
           <span className="text-primary">Executive Diploma</span>
           <br />
-          in <span className="text-gold">BIM</span>
+          in <span className="text-white">BIM</span>
         </h1>
 
         {/* Subheadline */}
@@ -79,21 +79,21 @@ export default function HeroSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               ),
               text: "ISO 9001:2015 Certified",
-              color: "text-gold",
+              color: "text-gray-400",
             },
             {
               icon: (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               ),
               text: "100% Placement Record",
-              color: "text-green-400",
+              color: "text-gray-400",
             },
             {
               icon: (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               ),
               text: "6 Centers in Pune",
-              color: "text-blue-400",
+              color: "text-gray-400",
             },
           ].map((badge) => (
             <div key={badge.text} className="flex items-center gap-2">

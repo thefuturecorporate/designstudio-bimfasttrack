@@ -175,7 +175,7 @@ export default function CoursePage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
-            <span className="text-gold text-sm font-bold tracking-widest uppercase">
+            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">
               Flagship Program
             </span>
             <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
@@ -279,8 +279,8 @@ export default function CoursePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {deliverables.map((d, i) => (
               <div key={d.title} className="fade-in-up card-hover bg-white border border-gray-200 rounded-2xl p-8 text-center" style={{ transitionDelay: `${i * 100}ms` }}>
-                <div className="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-14 h-14 bg-charcoal/5 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-7 h-7 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={d.icon} />
                   </svg>
                 </div>
@@ -296,7 +296,7 @@ export default function CoursePage() {
       <section className="py-16 bg-black-deep">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-[var(--font-outfit)] text-3xl font-extrabold text-white mb-4">
-            Ready to Start Your <span className="text-gold">BIM Journey</span>?
+            Ready to Start Your <span className="text-primary">BIM Journey</span>?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Link href="/contact" className="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/30">

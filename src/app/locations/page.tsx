@@ -48,10 +48,10 @@ export default function LocationsPage() {
     <div ref={ref}>
       {/* Hero */}
       <section className="relative bg-black-deep bg-blueprint pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-blue-500/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-white/5 rounded-full blur-3xl" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
-            <span className="text-blue-400 text-sm font-bold tracking-widest uppercase">Find Us Near You</span>
+            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">Find Us Near You</span>
             <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
               <span className="text-primary">6</span> Centers Across Pune
             </h1>

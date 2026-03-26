@@ -61,7 +61,7 @@ export default function ContactPage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
-            <span className="text-gold text-sm font-bold tracking-widest uppercase">Get In Touch</span>
+            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">Get In Touch</span>
             <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
               Start Your <span className="text-primary">BIM Career</span> Today
             </h1>

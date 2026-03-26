@@ -73,10 +73,10 @@ export default function CareerRolesPage() {
     <div ref={ref}>
       {/* Hero */}
       <section className="relative bg-black-deep bg-blueprint pt-32 pb-20 overflow-hidden">
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gold/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
-            <span className="text-gold text-sm font-bold tracking-widest uppercase">Career Pathways</span>
+            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">Career Pathways</span>
             <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
               <span className="text-primary">20+</span> High-Salary BIM Career Roles
             </h1>
@@ -104,7 +104,7 @@ export default function CareerRolesPage() {
                     <div key={role.title} className="card-hover bg-gray-light border border-gray-200 rounded-xl p-6">
                       <div className="flex items-start justify-between mb-2">
                         <h4 className="font-[var(--font-outfit)] font-bold text-black-deep">{role.title}</h4>
-                        <span className="text-sm font-bold text-gold whitespace-nowrap ml-3">&#8377;{role.salary}</span>
+                        <span className="text-sm font-bold text-primary whitespace-nowrap ml-3">&#8377;{role.salary}</span>
                       </div>
                       <p className="text-sm text-gray-600 mb-2">{role.tasks}</p>
                       <p className="text-xs text-gray-400">Works with: {role.works}</p>
@@ -121,16 +121,16 @@ export default function CareerRolesPage() {
       <section className="py-20 bg-black-deep bg-blueprint">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 fade-in-up">
-            <span className="text-gold text-sm font-bold tracking-widest uppercase">Career Ladder</span>
+            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">Career Ladder</span>
             <h2 className="font-[var(--font-outfit)] text-3xl md:text-4xl font-extrabold text-white mt-3">
-              Cross-Functional & <span className="text-gold">Leadership Roles</span>
+              Cross-Functional & <span className="text-primary">Leadership Roles</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {crossRoles.map((role, i) => (
               <div key={role.title} className="fade-in-up card-hover bg-charcoal/50 border border-white/10 rounded-2xl p-6" style={{ transitionDelay: `${i * 80}ms` }}>
                 <h3 className="font-[var(--font-outfit)] text-lg font-bold text-white mb-1">{role.title}</h3>
-                <span className="text-gold font-bold">&#8377;{role.salary}</span>
+                <span className="text-primary font-bold">&#8377;{role.salary}</span>
                 <p className="text-sm text-gray-400 mt-3">{role.desc}</p>
               </div>
             ))}

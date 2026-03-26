@@ -36,12 +36,12 @@ export default function PlacementsPage() {
     <div ref={ref}>
       {/* Hero */}
       <section className="relative bg-black-deep bg-blueprint pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-1/2 right-0 w-80 h-80 bg-green-500/5 rounded-full blur-3xl -translate-y-1/2" />
+        <div className="absolute top-1/2 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl -translate-y-1/2" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
-            <span className="text-green-400 text-sm font-bold tracking-widest uppercase">Proven Track Record</span>
+            <span className="text-gray-400 text-sm font-bold tracking-widest uppercase">Proven Track Record</span>
             <h1 className="font-[var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-3">
-              <span className="text-green-400">100%</span> Placement Record
+              <span className="text-primary">100%</span> Placement Record
             </h1>
             <p className="text-gray-400 text-lg mt-4 max-w-3xl">
               Our graduates work at leading construction firms, multinational consultancies, and BIM-focused organizations in India and the Gulf.
@@ -112,7 +112,7 @@ export default function PlacementsPage() {
       <section className="py-16 bg-black-deep">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-[var(--font-outfit)] text-3xl font-extrabold text-white mb-4">
-            Be Our Next <span className="text-green-400">Success Story</span>
+            Be Our Next <span className="text-primary">Success Story</span>
           </h2>
           <p className="text-gray-400 mb-8">Join hundreds of BIM professionals who launched their careers with us.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -2,12 +2,12 @@
 import { useCounter } from "@/hooks/useCounter";
 
 const stats = [
-  { value: 15, suffix: "+", label: "Software Tools", color: "text-primary" },
-  { value: 7, suffix: "", label: "Industry Projects", color: "text-gold" },
-  { value: 100, suffix: "%", label: "Placement Record", color: "text-green-400" },
-  { value: 6, suffix: "", label: "Training Centers", color: "text-blue-400" },
-  { value: 8, suffix: " Mo", label: "Max Duration", color: "text-purple-400" },
-  { value: 20, suffix: "+", label: "Career Roles", color: "text-orange-400" },
+  { value: 15, suffix: "+", label: "Software Tools", color: "text-black-deep" },
+  { value: 7, suffix: "", label: "Industry Projects", color: "text-black-deep" },
+  { value: 100, suffix: "%", label: "Placement Record", color: "text-black-deep" },
+  { value: 6, suffix: "", label: "Training Centers", color: "text-black-deep" },
+  { value: 8, suffix: " Mo", label: "Max Duration", color: "text-black-deep" },
+  { value: 20, suffix: "+", label: "Career Roles", color: "text-black-deep" },
 ];
 
 function StatCard({ value, suffix, label, color }: { value: number; suffix: string; label: string; color: string }) {
