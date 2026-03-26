@@ -29,20 +29,20 @@ export default function Footer() {
           <div className="space-y-4">
             <div>
               <Image
-                src="/images/bim-fasttrack-logo.png"
+                src="/images/bim-fasttrack-logo-white.png"
                 alt="BIM FastTrack"
                 width={180}
                 height={56}
-                className="h-14 w-auto invert brightness-200"
+                className="h-14 w-auto"
               />
             </div>
             <div className="mt-3">
               <Image
-                src="/images/design-studio-logo.png"
+                src="/images/design-studio-logo-white.png"
                 alt="Design Studio — CAD & IT Training Institute India"
                 width={160}
                 height={40}
-                className="h-10 w-auto invert brightness-200 opacity-70"
+                className="h-10 w-auto opacity-70"
               />
             </div>
             <p className="text-sm leading-relaxed">
