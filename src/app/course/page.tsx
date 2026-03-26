@@ -302,7 +302,7 @@ export default function CoursePage() {
             <Link href="/contact" className="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-primary/30">
               Enquire Now
             </Link>
-            <a href="https://wa.me/919049182666" target="_blank" rel="noopener noreferrer" className="border-2 border-white/20 text-white hover:bg-white/5 font-semibold px-8 py-4 rounded-xl transition-all">
+            <a href="https://wa.me/918237100666" target="_blank" rel="noopener noreferrer" className="border-2 border-white/20 text-white hover:bg-white/5 font-semibold px-8 py-4 rounded-xl transition-all">
               WhatsApp Us
             </a>
           </div>

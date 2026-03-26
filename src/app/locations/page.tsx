@@ -129,8 +129,8 @@ export default function LocationsPage() {
             <Link href="/contact" className="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition-all">
               Book a Visit
             </Link>
-            <a href="tel:+919049182666" className="border-2 border-white/20 text-white hover:bg-white/5 font-semibold px-8 py-4 rounded-xl transition-all">
-              Call: 9049 182 666
+            <a href="tel:+918237100666" className="border-2 border-white/20 text-white hover:bg-white/5 font-semibold px-8 py-4 rounded-xl transition-all">
+              Call: 8237 100 666
             </a>
           </div>
         </div>

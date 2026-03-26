@@ -59,7 +59,7 @@ export default function HeroSection() {
             Start Your BIM Career
           </Link>
           <a
-            href="https://wa.me/919049182666?text=Hi%2C%20I%27m%20interested%20in%20the%20Executive%20Diploma%20in%20BIM"
+            href="https://wa.me/918237100666?text=Hi%2C%20I%27m%20interested%20in%20the%20Executive%20Diploma%20in%20BIM"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white hover:border-white/40 hover:bg-white/5 font-semibold text-lg px-8 py-4 rounded-xl transition-all"

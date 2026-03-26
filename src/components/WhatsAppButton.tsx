@@ -5,7 +5,7 @@ export default function WhatsAppButton() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       {/* Phone Call Button */}
       <a
-        href="tel:+919049182666"
+        href="tel:+918237100666"
         className="w-14 h-14 bg-charcoal hover:bg-charcoal/80 rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110 group"
         aria-label="Call us"
       >
@@ -26,7 +26,7 @@ export default function WhatsAppButton() {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/919049182666?text=Hi%2C%20I%27m%20interested%20in%20the%20Executive%20Diploma%20in%20BIM.%20Please%20share%20more%20details."
+        href="https://wa.me/918237100666?text=Hi%2C%20I%27m%20interested%20in%20the%20Executive%20Diploma%20in%20BIM.%20Please%20share%20more%20details."
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 bg-[#25D366] hover:bg-[#20BD5A] rounded-full flex items-center justify-center shadow-lg shadow-[#25D366]/30 transition-all hover:scale-110 animate-pulse hover:animate-none"
