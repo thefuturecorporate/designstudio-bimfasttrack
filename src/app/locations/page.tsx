@@ -47,7 +47,7 @@ export default function LocationsPage() {
   return (
     <div ref={ref}>
       {/* Hero */}
-      <section className="relative bg-gray-light pt-32 pb-20 overflow-hidden">
+      <section className="relative bg-gray-light pt-36 pb-20 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fade-in-up">
             <span className="text-gray-500 text-sm font-bold tracking-widest uppercase">Find Us Near You</span>

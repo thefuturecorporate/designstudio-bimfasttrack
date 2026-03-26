@@ -6,7 +6,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden">
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36 text-center">
         {/* Product Badge */}
         <div className="inline-flex items-center gap-2 bg-gray-100 border border-gray-200 rounded-full px-5 py-2 mb-8">
           <span className="font-[var(--font-outfit)] text-sm font-bold text-black-deep">
