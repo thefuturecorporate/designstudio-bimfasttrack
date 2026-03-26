@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -32,15 +33,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="flex flex-col">
-              <span className="font-[var(--font-outfit)] text-xl md:text-2xl font-bold text-white tracking-tight">
-                BIM <span className="text-primary">Fast</span>Track
-              </span>
-              <span className="text-[10px] md:text-xs text-gray-500 -mt-1">
-                by Design Studio Institute
-              </span>
-            </div>
+          <Link href="/" className="shrink-0">
+            <Image
+              src="/images/bim-fasttrack-logo.jpg"
+              alt="BIM FastTrack — High-Salary Gateway"
+              width={160}
+              height={50}
+              className="h-10 md:h-12 w-auto brightness-0 invert"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

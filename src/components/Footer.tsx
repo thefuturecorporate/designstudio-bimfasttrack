@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -27,17 +28,22 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div>
-              <h3 className="font-[var(--font-outfit)] text-2xl font-bold text-white">
-                BIM <span className="text-primary">Fast</span>Track
-              </h3>
-              <p className="text-xs text-gold italic mt-1">
-                High-Salary Gateway
-              </p>
+              <Image
+                src="/images/bim-fasttrack-logo.jpg"
+                alt="BIM FastTrack"
+                width={180}
+                height={56}
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
-            <div className="flex items-center gap-2 mt-3">
-              <span className="text-xs text-gray-500">
-                by <span className="text-gray-400">Design Studio</span> — CAD & IT Training Institute India
-              </span>
+            <div className="mt-3">
+              <Image
+                src="/images/design-studio-logo.jpg"
+                alt="Design Studio — CAD & IT Training Institute India"
+                width={160}
+                height={40}
+                className="h-8 w-auto brightness-0 invert opacity-60"
+              />
             </div>
             <p className="text-sm leading-relaxed">
               India&apos;s premier BIM training institute. Transforming careers
