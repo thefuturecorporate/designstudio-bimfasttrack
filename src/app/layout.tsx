@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ChallengeBanner from "@/components/home/ChallengeBanner";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -50,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable} ${dmSans.variable}`}>
       <body className="min-h-screen flex flex-col antialiased">
+        <ChallengeBanner />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
