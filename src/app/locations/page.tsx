@@ -7,37 +7,37 @@ const locations = [
     name: "Pimple Saudagar",
     address: "Office No 718, 7th Floor, Spot 18 Mall, Pimple Saudagar, Pimpri Chinchwad, Mana-mandir Society, Rahatani, Pune, Maharashtra 411017",
     phone: "85301 38666",
-    mapQuery: "Spot+18+Mall+Pimple+Saudagar+Pune",
+    mapUrl: "https://maps.app.goo.gl/eRXrbVghntgDJKQi6",
   },
   {
     name: "Baner",
     address: "Office No 401, 4th Floor, Sangriya Developers, Shree Capital, Baner Road, Opposite Punjab National Bank, Baner, Pune, Maharashtra 411045",
     phone: "84129 52666",
-    mapQuery: "Shree+Capital+Baner+Pune",
+    mapUrl: "https://maps.app.goo.gl/GNvbfU31MJM6iCey5",
   },
   {
     name: "Hadapsar",
     address: "Office No 312, 3rd Floor, Amanora Chambers, Mundhwa-Kharadi Rd, Amanora Park Town, Hadapsar, Pune, Maharashtra 411028",
     phone: "89831 00666",
-    mapQuery: "Amanora+Chambers+Hadapsar+Pune",
+    mapUrl: "https://maps.app.goo.gl/seKqVd7mgLtRrUQC8",
   },
   {
     name: "Swargate",
     address: "Office No 101, 1st & 2nd floor, Modi Plaza, Opposite Lakshmi Narayan Theatre, Pune Satara Road, Near Swargate Bus Stand, Pune, Maharashtra 411037",
     phone: "85301 37666",
-    mapQuery: "Modi+Plaza+Swargate+Pune",
+    mapUrl: "https://maps.app.goo.gl/vBs8wDwtpVVkymoi7",
   },
   {
     name: "Bibvewadi",
     address: "1st Floor, Navkar Building, Balaji Nagar, New Nurses Town Co Operative Society, Dhankawadi, Pune, Maharashtra 411043",
     phone: "82373 00666",
-    mapQuery: "Navkar+Building+Bibvewadi+Pune",
+    mapUrl: "https://maps.app.goo.gl/5Ecj9DBjD5AW6uky8",
   },
   {
     name: "Narhe",
     address: "Office No 501/A1 wing, Omkar Nandan, Mumbai Pune Bypass Rd, Kudale Baug, Vadgaon Budruk, Katraj-Dehu Rd Bypass, Narhe, near Navale Chowk, Pune 411041",
     phone: "89832 00666",
-    mapQuery: "Omkar+Nandan+Narhe+Pune",
+    mapUrl: "https://maps.app.goo.gl/7amwK2PjMR4RFxeB6",
   },
 ];
 
@@ -99,7 +99,7 @@ export default function LocationsPage() {
                       {loc.phone}
                     </a>
                     <a
-                      href={`https://www.google.com/maps/search/${loc.mapQuery}`}
+                      href={loc.mapUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-gray-200 text-charcoal font-semibold text-sm px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors"

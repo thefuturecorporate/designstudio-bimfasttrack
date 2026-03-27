@@ -212,14 +212,13 @@ export default function CoursePage() {
             </h2>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-3 fade-in-up">
             {modules.map((mod, i) => (
               <div
                 key={mod.num}
-                className={`fade-in-up border rounded-xl overflow-hidden transition-all ${
+                className={`border rounded-xl overflow-hidden transition-all ${
                   expanded === i ? "border-primary/30 bg-primary/5" : "border-gray-200"
                 }`}
-                style={{ transitionDelay: `${i * 40}ms` }}
               >
                 <button
                   onClick={() => setExpanded(expanded === i ? null : i)}
